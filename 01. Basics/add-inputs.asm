@@ -8,10 +8,10 @@
 
 .code 
 main PROC
-    mov ax, @data
-    mov ds, AX
+    mov ax, @data ;the address where .data lives is put in ax
+    mov ds, AX ; ds is segment register. Copy ax into ds. 
 
-    lea dx, msg1
+    lea dx, msg1 ;lea is load affective address. 
     mov ah, 09h
     int 21h
 
