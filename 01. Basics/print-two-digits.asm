@@ -43,7 +43,7 @@ main proc
     mov cl, 10 
     div cl ;here ax=dividend cl=divisor al=quotient ah=remainder
 
-    mov bh, ah 
+    mov bh, ah ;->storing ramainder(ones-digit) in bh
 
     mov dl, AL
     add dl, 30h
